@@ -10,7 +10,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MULTILIB := 32
-LOCAL_SRC_FILES_32 := proprietary/system/lib/libaudiopolicymanager.so
+LOCAL_SRC_FILES_32 := proprietary/lib/libaudiopolicymanager.so
 include $(BUILD_PREBUILT)
 
 # dpframework
@@ -21,7 +21,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MULTILIB := 32
-LOCAL_SRC_FILES_32 := proprietary/system/lib/libdpframework.so
+LOCAL_SRC_FILES_32 := proprietary/lib/libdpframework.so
 include $(BUILD_PREBUILT)
 
 endif

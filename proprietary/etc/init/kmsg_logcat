@@ -1,5 +1,0 @@
-#!/system/bin/sh
-
-# credit: Juano @ Telegram
-
-logcat -v time -f /dev/kmsg >  | cat /proc/kmsg > /sdcard/log/log.txt & sleep 10 ; kill $!

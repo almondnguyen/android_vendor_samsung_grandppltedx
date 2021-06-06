@@ -94,6 +94,3 @@ key 163   MEDIA_NEXT
 key 165   MEDIA_PREVIOUS
 key 168   MEDIA_REWIND
 key 159   MEDIA_FAST_FORWARD
-
-# alz / samsung
-key 68    MENU

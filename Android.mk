@@ -1,27 +1,40 @@
+ifeq ($(TARGET_DEVICE),grandppltedx)
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),grandppltedx)
-ifneq ($(RECOVERY_VARIANT),twrp)
-# libaudiopolicy 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libaudiopolicymanager
-LOCAL_MODULE_OWNER := MediaTek
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE := libcam.client
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_SRC_FILES_32 := proprietary/lib/libcam.client.so
 LOCAL_MULTILIB := 32
-LOCAL_SRC_FILES_32 := proprietary/lib/libaudiopolicymanager.so
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
-# dpframework
 include $(CLEAR_VARS)
-LOCAL_MODULE := libdpframework
-LOCAL_MODULE_OWNER := MediaTek
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE := libcam_utils
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_SRC_FILES_32 := proprietary/lib/libcam_utils.so
 LOCAL_MULTILIB := 32
-LOCAL_SRC_FILES_32 := proprietary/lib/libdpframework.so
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
-endif
+
+# TEMPORARY
+include $(CLEAR_VARS)
+LOCAL_MODULE := librilmtk
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/librilmtk.so
+LOCAL_MULTILIB := 32
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := mtk-ril
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/mtk-ril.so
+LOCAL_MULTILIB := 32
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
 endif

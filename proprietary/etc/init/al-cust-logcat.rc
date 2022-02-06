@@ -1,4 +1,6 @@
 # almond
+on boot
+    start cust-log
 
 service cust-log /system/etc/init/log.sh
     class main

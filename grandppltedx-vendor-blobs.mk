@@ -15,7 +15,7 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandpplted
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandppltedx/proprietary/usr,$(TARGET_COPY_OUT_VENDOR)/usr)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandppltedx/proprietary/vendor,system/vendor)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandppltedx/proprietary/vendor,$(TARGET_COPY_OUT_VENDOR))
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandppltedx/proprietary/tee,$(TARGET_COPY_OUT_VENDOR)/tee)
 

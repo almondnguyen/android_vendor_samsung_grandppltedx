@@ -13,6 +13,8 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandpplted
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandppltedx/proprietary/lib64,$(TARGET_COPY_OUT_SYSTEM)/lib64)
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandppltedx/proprietary/media,$(TARGET_COPY_OUT_SYSTEM)/media)
+
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandppltedx/proprietary/usr,$(TARGET_COPY_OUT_SYSTEM)/usr)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandppltedx/proprietary/vendor,$(TARGET_COPY_OUT_VENDOR))

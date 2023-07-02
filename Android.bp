@@ -3,7 +3,7 @@ cc_prebuilt_library_shared {
 	vendor: true,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/lib/libdpframework.so"],
+			srcs: ["proprietary/vendor/lib/libdpframework.so"],
 		},
 	},
 	strip: {

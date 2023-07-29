@@ -9,8 +9,6 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandpplted
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandppltedx/proprietary/lib,system/lib)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandppltedx/proprietary/lib64,system/lib64)
-
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandppltedx/proprietary/media,system/media)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/grandppltedx/proprietary/usr,system/usr)

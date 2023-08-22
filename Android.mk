@@ -5,7 +5,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libcam.client
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
-LOCAL_SRC_FILES_32 := proprietary/lib/libcam.client.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libcam.client.so
 LOCAL_MULTILIB := 32
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
@@ -14,7 +14,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libcam_utils
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
-LOCAL_SRC_FILES_32 := proprietary/lib/libcam_utils.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libcam_utils.so
 LOCAL_MULTILIB := 32
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)

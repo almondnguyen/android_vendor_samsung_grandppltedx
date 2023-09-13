@@ -1,12 +1,27 @@
 cc_prebuilt_library_shared {
 	name: "libdpframework",
 	vendor: true,
+	strip: {
+		none:true,
+	},
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libdpframework.so"],
 		},
 	},
+	check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+	name: "libion_mtk",
+	vendor: true,
 	strip: {
 		none:true,
 	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libdpframework.so"],
+		},
+	},
+	check_elf_files: false,
 }
